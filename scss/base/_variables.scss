@@ -1,0 +1,24 @@
+// color names
+
+$black: black;
+$magenta: #ce2d4f;
+$plum: #403D58;
+$white: #eafff7;
+$yellow: #f7ff58;
+$alpha: .5;
+
+// color labels
+
+$text-color: $white;
+$accent-color: $yellow;
+$icon-color: mix($magenta, $white, $alpha);
+$tile1: $plum;
+$tile2: $magenta;
+$button-color: $yellow;
+$backgorund-color: $white;
+$shadow: lighten($black, 25%);
+
+//breakpoints
+
+$medium-break: '(max-width: 1000px)';
+$small-break: '(max-width: 600px)';

@@ -4,7 +4,26 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+div {
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: relative;
+  background-color: rgba(255, 93, 71, 0.7); }
+
+div::after {
+  content: "";
+  background: url("../img/time-wizard.jpg");
+  background-position: left;
+  border: 1px solid tomato;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
 body {
-  background-color: tomato; }
+  background-color: blanchedalmond; }
 
 /*# sourceMappingURL=application.css.map */

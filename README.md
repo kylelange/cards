@@ -10,6 +10,14 @@
 ## Description
  This week's code review must include:
 
+ * Stylesheets are organized using partials and are easy to understand
+ * Nesting is no more than four levels deep
+ * Variables are used effectively
+ * At least one use of a Sass color function
+ * At least one use of @extend
+ * At least one Bourbon @mixin, function, or add-on
+ * At least one @mixin of your own
+ * Page is responsive (at least one breakpoint) using Sass-style media queries and/or the Neat grid
 
 ## Setup/Installation Requirements
 
@@ -19,7 +27,27 @@
 
 3. run/check-out the program by dropping the index/html file from your folder into your web browser
 
-Install Sass/Bourbon/Neat:
+4. Install Sass/Bourbon/Neat:
+
+  in your console write:
+
+          _gem install sass_
+
+  If you get an error message try:
+
+          _sudo gem install sass_
+
+  Then:
+
+        _gem install bourbon && gem install neat_
+
+  Finally:
+
+        _bourbon install && neat install_
+
+5. Watch your Sass project/ make changes with:
+
+        _sass --watch scss:css_
 
 ## Known Bugs
 
