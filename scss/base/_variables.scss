@@ -24,6 +24,10 @@ $shadow: lighten($black, 25%);
 $medium-break: '(max-width: 1000px)';
 $small-break: '(max-width: 600px)';
 
+//interpolation of files
+
+$img1: 'time-wizard.jpg';
+
 //Burbon button variables
 
 #{$all-buttons} {

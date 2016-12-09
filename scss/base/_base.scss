@@ -64,8 +64,8 @@ section {
 
 section::after {
   content: "";
-  background: url('../img/time-wizard.jpg');
-  @include back-tile-img(left, $black) {
+  //background: url('../img/time-wizard.jpg');
+  @include back-tile-img($img1, left, $black) {
 
   }
   top: 0;

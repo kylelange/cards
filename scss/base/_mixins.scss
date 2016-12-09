@@ -4,7 +4,8 @@
 
 // Homegrown Mixins
 
-@mixin back-tile-img ($position, $border-color) {
+@mixin back-tile-img ($img1, $position, $border-color) {
+  background: url('../img/#{$img1}');
   background-position: $position;
   border: 2px solid $border-color;
 }
