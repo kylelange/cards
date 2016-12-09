@@ -24,18 +24,18 @@ $shadow: lighten($black, 25%);
 $medium-break: '(max-width: 1000px)';
 $small-break: '(max-width: 600px)';
 
-//Burbon buttons
+//Burbon button variables
 
 #{$all-buttons} {
-  background-color: #f00;
-  @include button(pill);
+  background-color: rgba(0, 0, 0, 0.01);
 }
 
 #{$all-buttons-focus},
 #{$all-buttons-hover} {
-  background-color: #0f0;
+  background-color: $yellow;
+  color: $black;
 }
 
 #{$all-buttons-active} {
-  background-color: #00f;
+  background-color: $icon-color;
 }
