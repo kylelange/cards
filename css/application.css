@@ -75,7 +75,7 @@ section::after {
   content: "";
   background: url("../img/time-wizard.jpg");
   background-position: left;
-  border: 1px solid black;
+  border: 2px solid black;
   top: 0;
   left: 0;
   bottom: 0;

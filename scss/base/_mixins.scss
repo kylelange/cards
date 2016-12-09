@@ -3,3 +3,8 @@
 
 
 // Homegrown Mixins
+
+@mixin back-tile-img ($position, $border-color) {
+  background-position: $position;
+  border: 2px solid $border-color;
+}
