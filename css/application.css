@@ -15,6 +15,35 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
   background-color: #fffefe; }
 
+section {
+  width: 300px;
+  height: 420px;
+  display: block;
+  position: relative;
+  margin: 2%; }
+  section::after {
+    clear: both;
+    content: "";
+    display: block; }
+  section img {
+    width: 80%;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px 30px;
+    border: 2px solid #f7ff58; }
+  section h3 {
+    text-align: center;
+    background-color: #403D58;
+    width: 80%;
+    margin: 0 30px;
+    border: 1px solid #f7ff58; }
+  section p {
+    margin: 10px; }
+  section .icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+
 *,
 *::before,
 *::after {
@@ -39,39 +68,10 @@ button {
   margin: 3%;
   font-size: 1em; }
 
-.tile1 {
-  margin: 2%; }
-  .tile1::after {
-    clear: both;
-    content: "";
-    display: block; }
-  .tile1 img {
-    width: 80%;
-    height: 150px;
-    object-fit: cover;
-    margin: 10px 30px;
-    border: 2px solid #f7ff58; }
-  .tile1 h3 {
-    text-align: center;
-    background-color: #403D58;
-    width: 80%;
-    margin: 0 30px;
-    border: 1px solid #f7ff58; }
-  .tile1 p {
-    margin: 10px; }
-  .tile1 .icons {
-    width: 100%;
-    display: flex;
-    justify-content: space-around; }
-
 section {
-  width: 300px;
-  height: 420px;
-  display: block;
-  position: relative;
   background-color: rgba(64, 61, 88, 0.9); }
 
-section::after {
+.tile1::after {
   background: url("../img/time-wizard.jpg");
   background-position: left;
   border: 2px solid black;
