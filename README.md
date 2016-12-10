@@ -1,6 +1,6 @@
-# _App Name_
+# _Ouiz Cards_
 
-#### _{A responsive site + short desc.}, {Dec 2, 2016}_
+#### _{A responsive site for week 3 CSS code review}, {Dec 9, 2016}_
 
 #### By _**Kyle Lange**_
 

@@ -47,8 +47,12 @@ $font-main: 'heebo', $font-stack;
 #{$all-buttons-hover} {
   background-color: $yellow;
   color: $black;
+  transform:scale(1.08);
+  transition: all 200ms ease;
 }
 
 #{$all-buttons-active} {
   background-color: $icon-color;
+  transform:scale(1);
+  transition: all 200ms ease;
 }

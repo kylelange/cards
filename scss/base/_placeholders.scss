@@ -16,14 +16,19 @@
     width: 80%;
     height: 150px;
     object-fit: cover;
-    margin: 10px 30px;
+    margin: 10px 35px;
     border: 2px solid $yellow;
+  }
+  .zoom:hover {
+    transform:scale(1.08);
+    transition: all 200ms ease;
+
   }
   h3 {
     text-align: center;
     background-color: $plum;
     width: 80%;
-    margin: 0 30px;
+    margin: 0 35px;
     border: 1px solid $yellow;
   }
   p {

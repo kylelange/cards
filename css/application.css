@@ -10,10 +10,14 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus,
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   background-color: #f7ff58;
-  color: black; }
+  color: black;
+  transform: scale(1.08);
+  transition: all 200ms ease; }
 
 button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
-  background-color: #fffefe; }
+  background-color: #fffefe;
+  transform: scale(1);
+  transition: all 200ms ease; }
 
 *,
 *::before,
@@ -37,13 +41,16 @@ button:active, input[type="button"]:active, input[type="reset"]:active, input[ty
     width: 80%;
     height: 150px;
     object-fit: cover;
-    margin: 10px 30px;
+    margin: 10px 35px;
     border: 2px solid #f7ff58; }
+  .tile1 .zoom:hover, .tile2 .zoom:hover {
+    transform: scale(1.08);
+    transition: all 200ms ease; }
   .tile1 h3, .tile2 h3 {
     text-align: center;
     background-color: #403D58;
     width: 80%;
-    margin: 0 30px;
+    margin: 0 35px;
     border: 1px solid #f7ff58; }
   .tile1 p, .tile2 p {
     margin: 10px; }
@@ -63,8 +70,28 @@ button {
 body {
   background-color: #404040; }
 
-section {
-  float: left; }
+h1, h2, h3, p, i, span {
+  font-family: "heebo", impact, sans-serif;
+  color: white;
+  -webkit-font-smooth: antialiased; }
+
+.wrap {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrap::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  width: 92%; }
+  .row:last-child {
+    margin-right: 0; }
 
 .tile1 {
   background-color: rgba(64, 61, 88, 0.9); }
@@ -95,11 +122,6 @@ section {
   right: 0;
   position: absolute;
   z-index: -1; }
-
-h1, h3, p, i, span {
-  font-family: "heebo", impact, sans-serif;
-  color: white;
-  -webkit-font-smooth: antialiased; }
 
 .nav {
   text-align: center;

@@ -1,0 +1,40 @@
+// section {
+//   float: left;
+// }
+
+.wrap {
+  @include outer-container(400px);
+}
+
+.row {
+  @include span-columns(12);
+  width: 92%;
+}
+
+.main {
+  // @media screen and #{$small-break} {
+  // @include span-columns(6 of 12);
+  // width: 45%;
+  // }
+  // @media screen and #{$medium-break} {
+  // @include span-columns(4 of 12);
+  // }
+}
+
+.tile1 {
+  @extend %section-tile;
+  background-color: rgba(64, 61, 88, 0.9);
+}
+
+.tile1::after {
+  @include back-tile-img($img1, left, $black) {}
+}
+
+.tile2 {
+  @extend %section-tile;
+  background-color: rgba(210, 42, 79, 0.7);
+}
+
+.tile2::after {
+  @include back-tile-img($img2, top, $black) {}
+}

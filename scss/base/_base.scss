@@ -7,27 +7,3 @@
 body {
   background-color: $shadow;
 }
-
-//to go to containers.scss
-
-section {
-  float: left;
-}
-
-.tile1 {
-  @extend %section-tile;
-  background-color: rgba(64, 61, 88, 0.9);
-}
-
-.tile1::after {
-  @include back-tile-img($img1, left, $black) {}
-}
-
-.tile2 {
-  @extend %section-tile;
-  background-color: rgba(210, 42, 79, 0.7);
-}
-
-.tile2::after {
-  @include back-tile-img($img2, top, $black) {}
-}
