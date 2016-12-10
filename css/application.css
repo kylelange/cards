@@ -15,35 +15,6 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
   background-color: #fffefe; }
 
-section {
-  width: 300px;
-  height: 420px;
-  display: block;
-  position: relative;
-  margin: 2%; }
-  section::after {
-    clear: both;
-    content: "";
-    display: block; }
-  section img {
-    width: 80%;
-    height: 150px;
-    object-fit: cover;
-    margin: 10px 30px;
-    border: 2px solid #f7ff58; }
-  section h3 {
-    text-align: center;
-    background-color: #403D58;
-    width: 80%;
-    margin: 0 30px;
-    border: 1px solid #f7ff58; }
-  section p {
-    margin: 10px; }
-  section .icons {
-    width: 100%;
-    display: flex;
-    justify-content: space-around; }
-
 *,
 *::before,
 *::after {
@@ -52,13 +23,34 @@ section {
   box-sizing: border-box;
   margin: 0; }
 
-body {
-  background-color: #404040; }
-
-h1, h3, p, i, span {
-  font-family: 'Heebo', Impact, sans-serif;
-  color: white;
-  -webkit-font-smooth: antialiased; }
+.tile1, .tile2 {
+  width: 300px;
+  height: 420px;
+  display: block;
+  position: relative;
+  margin: 15px 15px 0 15px; }
+  .tile1::after, .tile2::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .tile1 img, .tile2 img {
+    width: 80%;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px 30px;
+    border: 2px solid #f7ff58; }
+  .tile1 h3, .tile2 h3 {
+    text-align: center;
+    background-color: #403D58;
+    width: 80%;
+    margin: 0 30px;
+    border: 1px solid #f7ff58; }
+  .tile1 p, .tile2 p {
+    margin: 10px; }
+  .tile1 .icons, .tile2 .icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
 
 button {
   color: #f7ff58;
@@ -68,7 +60,13 @@ button {
   margin: 3%;
   font-size: 1em; }
 
+body {
+  background-color: #404040; }
+
 section {
+  float: left; }
+
+.tile1 {
   background-color: rgba(64, 61, 88, 0.9); }
 
 .tile1::after {
@@ -82,5 +80,30 @@ section {
   right: 0;
   position: absolute;
   z-index: -1; }
+
+.tile2 {
+  background-color: rgba(210, 42, 79, 0.7); }
+
+.tile2::after {
+  background: url("../img/black-dragon.jpg");
+  background-position: top;
+  border: 2px solid black;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+h1, h3, p, i, span {
+  font-family: "heebo", impact, sans-serif;
+  color: white;
+  -webkit-font-smooth: antialiased; }
+
+.nav {
+  text-align: center;
+  border-bottom: 2px solid #f7ff58;
+  margin: 15px; }
 
 /*# sourceMappingURL=application.css.map */

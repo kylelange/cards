@@ -1,36 +1,33 @@
 *,
 *::before,
 *::after {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            margin: 0;
+  @extend %border-box;
 }
 
 body {
   background-color: $shadow;
 }
 
-h1,h3,p,i,span {
-  font-family: 'Heebo', Impact, sans-serif;
-  color: $white;
-  -webkit-font-smooth: antialiased;
-}
-
-button {
-  color: $yellow;
-  border: 1px solid $yellow;
-  padding: 8px;
-  float: right;
-  margin: 3%;
-  font-size: 1em;
-}
+//to go to containers.scss
 
 section {
+  float: left;
+}
+
+.tile1 {
   @extend %section-tile;
   background-color: rgba(64, 61, 88, 0.9);
 }
 
 .tile1::after {
   @include back-tile-img($img1, left, $black) {}
+}
+
+.tile2 {
+  @extend %section-tile;
+  background-color: rgba(210, 42, 79, 0.7);
+}
+
+.tile2::after {
+  @include back-tile-img($img2, top, $black) {}
 }
