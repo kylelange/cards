@@ -63,15 +63,5 @@ section {
 }
 
 section::after {
-  content: "";
-  //background: url('../img/time-wizard.jpg');
-  @include back-tile-img($img1, left, $black) {
-
-  }
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+  @include back-tile-img($img1, left, $black) {}
 }

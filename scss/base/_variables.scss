@@ -16,7 +16,6 @@ $icon-color: mix($magenta, $white, $alpha);
 $tile1: $plum;
 $tile2: $magenta;
 $button-color: $yellow;
-$background-color: $cream;
 $shadow: lighten($black, 25%);
 
 //breakpoints
@@ -24,9 +23,11 @@ $shadow: lighten($black, 25%);
 $medium-break: '(max-width: 1000px)';
 $small-break: '(max-width: 600px)';
 
-//interpolation of files
+//interpolation of img files
 
 $img1: 'time-wizard.jpg';
+$img2: 'black-dragon';
+$img3: 'dark-magician.png';
 
 //Burbon button variables
 

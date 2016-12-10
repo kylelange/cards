@@ -72,10 +72,10 @@ section {
   background-color: rgba(64, 61, 88, 0.9); }
 
 section::after {
-  content: "";
   background: url("../img/time-wizard.jpg");
   background-position: left;
   border: 2px solid black;
+  content: "";
   top: 0;
   left: 0;
   bottom: 0;
