@@ -3,22 +3,20 @@
 // }
 
 .wrap {
-  @include outer-container(400px);
+  @include outer-container(1000px);
+  @media screen and #{$medium-break} {
+    @include outer-container(700px);
+  }
 }
 
 .row {
-  @include span-columns(12);
-  width: 92%;
+  @media screen and #{$small-break} {
+    margin-left: 9%
+  }
 }
 
 .main {
-  // @media screen and #{$small-break} {
-  // @include span-columns(6 of 12);
-  // width: 45%;
-  // }
-  // @media screen and #{$medium-break} {
-  // @include span-columns(4 of 12);
-  // }
+  float: left;
 }
 
 .tile1 {
