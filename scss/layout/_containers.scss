@@ -1,7 +1,3 @@
-// section {
-//   float: left;
-// }
-
 .wrap {
   @include outer-container(1000px);
   @media screen and #{$medium-break} {
@@ -22,6 +18,9 @@
 .tile1 {
   @extend %section-tile;
   background-color: rgba(64, 61, 88, 0.9);
+  h3 {
+    background-color: $plum;
+  }
 }
 
 .tile1::after {
@@ -31,8 +30,59 @@
 .tile2 {
   @extend %section-tile;
   background-color: rgba(210, 42, 79, 0.7);
+  h3 {
+    background-color: $magenta;
+  }
 }
 
 .tile2::after {
   @include back-tile-img($img2, top, $black) {}
+}
+
+.tile3 {
+  @extend %section-tile;
+  background-color: rgba(64, 61, 88, 0.9);
+  h3 {
+    background-color: $plum;
+  }
+}
+
+.tile3::after {
+  @include back-tile-img($img3, right, $black) {}
+}
+
+.tile4 {
+  @extend %section-tile;
+  background-color: rgba(210, 42, 79, 0.7);
+  h3 {
+    background-color: $magenta;
+  }
+}
+
+.tile4::after {
+  @include back-tile-img($img4, top center, $black) {}
+}
+
+.tile5 {
+  @extend %section-tile;
+  background-color: rgba(64, 61, 88, 0.9);
+  h3 {
+    background-color: $plum;
+  }
+}
+
+.tile5::after {
+  @include back-tile-img($img5, left , $cream) {}
+}
+
+.tile6 {
+  @extend %section-tile;
+  background-color: rgba(210, 42, 79, 0.7);
+  h3 {
+    background-color: $magenta;
+  }
+}
+
+.tile6::after {
+  @include back-tile-img($img6, top center, $black) {}
 }

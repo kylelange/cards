@@ -27,34 +27,33 @@ button:active, input[type="button"]:active, input[type="reset"]:active, input[ty
   box-sizing: border-box;
   margin: 0; }
 
-.tile1, .tile2 {
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6 {
   width: 300px;
   height: 420px;
   display: block;
   position: relative;
   margin: 15px 15px 0 15px; }
-  .tile1::after, .tile2::after {
+  .tile1::after, .tile2::after, .tile3::after, .tile4::after, .tile5::after, .tile6::after {
     clear: both;
     content: "";
     display: block; }
-  .tile1 img, .tile2 img {
+  .tile1 img, .tile2 img, .tile3 img, .tile4 img, .tile5 img, .tile6 img {
     width: 80%;
     height: 150px;
     object-fit: cover;
     margin: 10px 35px;
     border: 2px solid #f7ff58; }
-  .tile1 .zoom:hover, .tile2 .zoom:hover {
+  .tile1 .zoom:hover, .tile2 .zoom:hover, .tile3 .zoom:hover, .tile4 .zoom:hover, .tile5 .zoom:hover, .tile6 .zoom:hover {
     transform: scale(1.08);
     transition: all 200ms ease; }
-  .tile1 h3, .tile2 h3 {
+  .tile1 h3, .tile2 h3, .tile3 h3, .tile4 h3, .tile5 h3, .tile6 h3 {
     text-align: center;
-    background-color: #403D58;
     width: 80%;
     margin: 0 35px;
     border: 1px solid #f7ff58; }
-  .tile1 p, .tile2 p {
+  .tile1 p, .tile2 p, .tile3 p, .tile4 p, .tile5 p, .tile6 p {
     margin: 10px; }
-  .tile1 .icons, .tile2 .icons {
+  .tile1 .icons, .tile2 .icons, .tile3 .icons, .tile4 .icons, .tile5 .icons, .tile6 .icons {
     width: 100%;
     display: flex;
     justify-content: space-around; }
@@ -93,7 +92,7 @@ h1, h2, h3, p, i, span {
         content: "";
         display: block; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .row {
     margin-left: 9%; } }
 
@@ -102,6 +101,8 @@ h1, h2, h3, p, i, span {
 
 .tile1 {
   background-color: rgba(64, 61, 88, 0.9); }
+  .tile1 h3 {
+    background-color: #403D58; }
 
 .tile1::after {
   background: url("../img/time-wizard.jpg");
@@ -117,10 +118,80 @@ h1, h2, h3, p, i, span {
 
 .tile2 {
   background-color: rgba(210, 42, 79, 0.7); }
+  .tile2 h3 {
+    background-color: #ce2d4f; }
 
 .tile2::after {
   background: url("../img/black-dragon.jpg");
   background-position: top;
+  border: 2px solid black;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.tile3 {
+  background-color: rgba(64, 61, 88, 0.9); }
+  .tile3 h3 {
+    background-color: #403D58; }
+
+.tile3::after {
+  background: url("../img/dark-magician.png");
+  background-position: right;
+  border: 2px solid black;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.tile4 {
+  background-color: rgba(210, 42, 79, 0.7); }
+  .tile4 h3 {
+    background-color: #ce2d4f; }
+
+.tile4::after {
+  background: url("../img/yugi.jpg");
+  background-position: top center;
+  border: 2px solid black;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.tile5 {
+  background-color: rgba(64, 61, 88, 0.9); }
+  .tile5 h3 {
+    background-color: #403D58; }
+
+.tile5::after {
+  background: url("../img/joey.jpg");
+  background-position: left;
+  border: 2px solid #eafff7;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.tile6 {
+  background-color: rgba(210, 42, 79, 0.7); }
+  .tile6 h3 {
+    background-color: #ce2d4f; }
+
+.tile6::after {
+  background: url("../img/cards.jpg");
+  background-position: top center;
   border: 2px solid black;
   content: "";
   top: 0;
